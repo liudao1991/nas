@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>星云五子棋</title>
+        <script src=js/jquery-3.3.1.min.js></script>
+        <link rel="stylesheet" href="css/normalize3.0.2.min.css" />
+        <link rel="stylesheet" href="css/css.css?v=15" />
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+    <body>
+        <p class="WalletCheck" style="display: none; text-align: center; position: absolute; top: 0; left: 0; right: 0;">------&nbsp;&nbsp;&nbsp;&nbsp;如若使用上榜功能，请使用谷歌浏览器并安装星云钱包插件。&nbsp;&nbsp;&nbsp;------</p>
+    <div class="left">
+        <section id="ranking"> <span id="ranking_title">步数排行榜</span>
+  <section id="ranking_list">
+  </section>
+    </div>
+    <div class="middle">
+        <h3 id="result-wrap">星云五子棋</h3>
+        <canvas id="chess" width="450px" height="450px"></canvas>
+        <div class="btn-wrap">
+            <div id='restart' class="restart">
+                <span>重新开始</span>
+            </div>
+            <div style="display: none;" id='goback' class="goback unable">
+                <span>悔棋</span>
+            </div>
+            <div style="display: none;" id='return' class="return unable">
+                <span>撤销悔棋</span>
+            </div>
+        </div>
+    </div>
+    <div class="right" style="margin-top: 20px; margin-left: 0px;">
+        <div class="tips">
+            游戏说明：该游戏为五子棋挑战赛，赢得比赛后，可以点击“我要上榜”按钮，将自己的成绩记录上链，并与全球玩家一争高下！
+        </div>
+        <div style="font-size: 20px;">步数：<i class="step">0</i></div>
+         <div id="savebtn" class="unable"><span class="save" style="margin-top: 20px;">我要上榜</span></div>
+    </div>
+    <script src=js/fir.js></script>
+    <script src=js/nebPay.js></script>
+    <script src=js/nebulas.js></script>
+    <script src=js/api.js></script>
+    </body>
+</html>
